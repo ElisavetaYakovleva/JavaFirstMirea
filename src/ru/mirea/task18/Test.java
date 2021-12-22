@@ -5,9 +5,9 @@ public class Test {
     static void testAccountNumb(int n) {
         try{
             c.accountNumb = n;
-            if(n < 0) throw new RuntimeException("Ошибка баланса");
+            if(n < 0) throw new RuntimeException("Ошибка");
         }finally {
-            System.out.println("Произошла ошибка баланса! Баланс не иожет быть отрицательным!");
+            System.out.println("Произошла ошибка баланса. Баланс не иожет быть отрицательным!");
         }
     }
 
