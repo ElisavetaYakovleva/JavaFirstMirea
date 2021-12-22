@@ -6,8 +6,8 @@ public class test {
         M kpw = new KPW();
         //M usd = new USD();
 
-        eur.convers(3000);
-        kpw.convers(3000);
+        eur.convers(4060);
+        kpw.convers(3054);
         //usd.convers(3000);
 
     }
