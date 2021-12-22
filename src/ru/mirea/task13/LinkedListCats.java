@@ -23,9 +23,9 @@ public class LinkedListCats {
         System.out.println("Вывод списка");
         printCats(lkList);
         System.out.println("Добавление элементов");
-        Cats cat1 = new Cats("Черныш", "чёрный");
+        Cats cat1 = new Cats("Кот 1", "белый");
         lkList.add(cat1);
-        Cats cat2 = new Cats("Рыжик","рыжий");
+        Cats cat2 = new Cats("Кот 2","серый");
         lkList.add(0, cat2);
         printCats(lkList);
         System.out.println("Размер списка");
@@ -36,7 +36,7 @@ public class LinkedListCats {
         System.out.println("Удаление элемента по индексу (0)");
         lkList.remove(0);
         printCats(lkList);
-        System.out.println("Проверка на вхождение элементов (Рыжик и Черныш)");
+        System.out.println("Проверка на вхождение элементов (Кот 2 и Кот 1)");
         System.out.println(lkList.contains(cat1));
         System.out.println(lkList.contains(cat2));
         System.out.println("Очищение списка");
