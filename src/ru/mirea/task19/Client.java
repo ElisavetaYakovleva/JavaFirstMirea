@@ -27,11 +27,11 @@ public class Client {
     public float getBalance() {
         return balance;
     }
-    public void addMoney(int adding)
+    public void addM(int adding)
     {
         balance += adding;
     }
-    public void takeMoney(int taking)
+    public void takeM(int taking)
     {
         balance -= taking;
     }

@@ -1,4 +1,4 @@
-package ru.mirea.task23;
+package ru.mirea.task28;
 
 public class Client {
     public String name;
@@ -38,18 +38,23 @@ public class Client {
         balance -= taking;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if((o == null) || (getClass() != o.getClass())) return false;
-        Client cl = (Client) o;
-        return getName().equals(cl.getName());
+    static class SpecialBalance{
+        public float credOrDep;
+
+        public SpecialBalance(int credOrDep){
+            this.credOrDep = credOrDep;
+        }
+
+        public float getCredOrDep() {
+            return credOrDep;
+        }
+        public void setCredOrDep(float credOrDep) {
+            this.credOrDep = credOrDep;
+        }
     }
 
-    @Override
-    public int hashCode() {
-        int res = (getName() == null) ? 0 : getName().hashCode();
-        res = 29 * res;
-        return res;
+    public static void main(String[] args) {
+        Client.SpecialBalance bal = new Client.SpecialBalance(300);
+        System.out.println(bal.getCredOrDep());
     }
 }
